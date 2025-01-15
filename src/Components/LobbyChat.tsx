@@ -74,7 +74,6 @@ export default function LobbyChat({ connection, lobbyState: { myUserId, users, c
 
     const transformChatArg = useMemo(() => createUnionDispatch<LobbyChatArg, string>({
         user: user_id => clipUsername(getUser(users, user_id).username),
-        integer: value => value.toString(),
         string: value => value
     }), [users]);
 

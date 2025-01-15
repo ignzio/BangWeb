@@ -47,7 +47,6 @@ export interface UserValue {
 
 export type LobbyChatArg =
     {user: UserId} |
-    {integer: number} |
     {string: string};
 
 export interface ChatMessage {
